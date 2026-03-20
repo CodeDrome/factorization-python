@@ -1,7 +1,9 @@
+from typing import List
+
 import math
 
 
-def get_factor_list(n):
+def get_factor_list(n:int) -> List:
 
     """
     Use trial division to identify the factors of n.
@@ -20,7 +22,7 @@ def get_factor_list(n):
     return factors
 
 
-def factors(n):
+def factors(n:int) -> int:
 
     """
     Generator function leveraging the get_factor_list function.
